@@ -1,8 +1,10 @@
-# webpack
+# Learn webpack
 
 ### webpack 编译css 
 
 > css-loader 是将css模块打包，style-loader是将打包后的css添加到html的head
+
+
 ```
 webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader' 
 ```
@@ -47,3 +49,5 @@ webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader' --w
 
 ```
 > 运行结果
+
+![](img/res1.jpg)
