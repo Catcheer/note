@@ -5,3 +5,4 @@ cc
 狼牙
 
 git stage
+git 跟踪的是修改 而不是文件
