@@ -15,3 +15,10 @@ win系统 node版本管理 nvm
 ```
 windows系统安装nvm https://github.com/coreybutler/nvm-windows
 ```
+
+git config
+
+```
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+```
