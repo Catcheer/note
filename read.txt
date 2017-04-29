@@ -4,3 +4,4 @@ cc
 另一个自己
 狼牙
 
+git stage
