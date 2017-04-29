@@ -10,4 +10,8 @@ cd  切换目录
 
 Ios 系统下 Data.parese() bug  Ios 系统Data.parse日期中间的- 需替换为/  否则无法解析
 
+win系统 node版本管理 nvm
 
+```
+windows系统安装nvm https://github.com/coreybutler/nvm-windows
+```
