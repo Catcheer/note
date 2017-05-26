@@ -56,3 +56,13 @@ $ git remote rm origin
 添加后，远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库。
 
 下一步，就可以把本地库的所有内容推送到远程库上：
+
+
+
+
+### chrome 中调试node
+
+npm install -g devtool
+
+devtool name --watch
+
