@@ -66,3 +66,14 @@ npm install -g devtool
 
 devtool name --watch
 
+### Charles抓https包 设置 
+ 
+ 抓https包时需安装证书(http包不用安装)
+ 
+ help>ssl proxying>....
+ 
+ 安装证书后 iphone手机上开启证书信任（通用>关于本机>证书信任设置） 否则无法抓取
+
+
+
+
