@@ -75,6 +75,35 @@ devtool name --watch
  安装证书后 iphone手机上开启证书信任（通用>关于本机>证书信任设置） 否则无法抓取
  
  ### 树状型显示github项目工具 Octotree（chrome 扩展工具)
+ 
+ 
+ ### form表单  enctype属性
+ 
+ 上传文件的表单中<form>要加属性enctype="multipart/form-data",
+
+ 其实form表单在你不写enctype属性时，也默认为其添加了enctype属性值，默认值是enctype="application/x- www-form-urlencoded".
+
+ 这个属性管理的是表单的MIME编码，共有三个值可选：
+
+　　①application/x-www-form-urlencoded (默认值)
+
+　　②multipart/form-data
+
+　　③text/plain
+
+　　其中①application/x-www-form-urlencoded是默认值，大家可能在AJAX里见过这 个：xmlHttp.setRequestHeader("Content-Type","application/x-www-form- urlencoded"); 这两个要做的是同一件事情，就是设置表单传输的编码。在AJAX里不写有可能会报错，但是在HTML的form表单里是可以不写 enctype="application/x-www-form-urlencoded"的，因为默认HTML表单就是这种传输编码类型。
+
+
+
+②multipart-form-data是用来指定传输数据的特殊类型的，主要就是我们上传的非文本的内容，比如图片或者mp3等等。
+
+
+
+③text/plain是纯文本传输的意思，在发送邮件时要设置这种编码类型，否则会出现接收时编码混乱的问题，网络上经常拿text/plain和 text/html做比较，其实这两个很好区分，前者用来传输纯文本文件，后者则是传递html代码的编码类型，
+
+
+
+在发送头文件时才用得上。①和③都不能用 于上传文件，只有multipart/form-data才能完整的传递文件数据。
 
 
 
