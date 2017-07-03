@@ -105,7 +105,21 @@ devtool name --watch
 
 在发送头文件时才用得上。①和③都不能用 于上传文件，只有multipart/form-data才能完整的传递文件数据。
 
+### process
 
-
+你可以通过 process 这个全局对象来获取命令行中的参数。process 对象
+  拥有一个名为 argv
+  的属性，该属性是一个数组，数组中包含了整条命令的所有部分。
+  
+  命令行输入
+  ```
+  node program.js 1,2,3,4
+  ```
+会打得到
+```
+[ 'd:\\Program Files\\nodejs\\node.exe',
+  'E:\\mySelfTest\\node\\program.js',
+  '1,2,3,4' ]
+```
 
 
