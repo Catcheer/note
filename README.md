@@ -126,18 +126,18 @@ devtool name --watch
 ### splice   slice
 
 arr.slice(start,end)
-1.arr中复制一份从start到end，不包括end
-2.返回值是复制出来的新的数组
-3.不改变源数组(arr)
-4.如果start，end只要其中一个为负数，则返回空数组
++ arr中复制一份从start到end，不包括end
++ 返回值是复制出来的新的数组
++ 不改变源数组(arr)
++ 如果start，end只要其中一个为负数，则返回空数组
 
 arr.splice(start,deleteCount,item1,item2,...)
-1.arr从start开始删除deleteCount个元素，然后将item1,item2,...从start开始插入。
-2.返回值是一个包含删除的元素的数组
-3.原数组arr得到修改
-4.如果item1,item2,...不存在，则只删除，不添加新元素
-5.如果start为负数则转换为start+arr.length
-6.deleteCount如果为负数，则将转化为0
++ arr从start开始删除deleteCount个元素，然后将item1,item2,...从start开始插入。
++ 返回值是一个包含删除的元素的数组
++ 原数组arr得到修改
++ 如果item1,item2,...不存在，则只删除，不添加新元素
++ 如果start为负数则转换为start+arr.length
++ deleteCount如果为负数，则将转化为0
 
 
 
