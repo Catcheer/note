@@ -139,6 +139,26 @@ arr.splice(start,deleteCount,item1,item2,...)
 + 如果start为负数则转换为start+arr.length
 + deleteCount如果为负数，则将转化为0
 
+### gulp-livereload实现文件修改时浏览器自动刷新
 
+```
+ var gulp = require('gulp'),
+    less = require('gulp-less'),
+    livereload = require('gulp-livereload');
 
+gulp.task('less', function () {
+    gulp.src("less/**/*.less")
+        .pipe(less())
+        .pipe(gulp.dest('css/'))
+        .pipe(livereload());
+});
+
+gulp.task('watch', function () {
+    livereload.listen();
+    gulp.watch('less/**/*.less', ['less']);
+});
+
+gulp.task('default',['watch'])
+```
+serve建立本地服务器，并且浏览器安装livereload插件，安装livereload插件，安装livereload插件
 
