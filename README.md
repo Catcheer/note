@@ -162,3 +162,13 @@ gulp.task('default',['watch'])
 ```
 serve建立本地服务器，并且浏览器安装livereload插件，安装livereload插件，安装livereload插件
 
+### window 创建.gitignore文件
+
+使用cmd，如
+
+1，输入：copy con .gitignore 回车
+2，输入 文件内容
+3，ctrl + z 回车
+
+如果文件没有内容直接跳过步骤 2 即可。
+
