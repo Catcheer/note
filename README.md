@@ -174,7 +174,7 @@ serve建立本地服务器，并且浏览器安装livereload插件，安装liver
 
 
 
-使用正则表达式的方法
+### 使用正则表达式的方法
 方法	描述
 exec	一个在字符串中执行查找匹配的RegExp方法，它返回一个数组（未匹配到则返回null）。
 test	一个在字符串中测试是否匹配的RegExp方法，它返回true或false。
