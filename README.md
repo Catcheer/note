@@ -186,3 +186,16 @@ serve建立本地服务器，并且浏览器安装livereload插件，安装liver
 
 ### isNaN(' ') 返回false
 
+### nginx 配置  静态资源托管
+
+修改conf目录下 nginx.conf文件
+
+```
+ location /images {
+            alias D:/images;
+        }
+
+```
+ngin/html目录下创建images文件夹（即便是空文件夹）
+alias 是绝对路径 localhost/images/1.jpg=>alias D:/images/1.jpg
+root 是相对路径 localhost/images/1.jpg=>localhost/images/alias D:/images/1.jpg
