@@ -1,0 +1,6 @@
+undefined 与null的区别
+js设计之初现有null没有undefined
+
+null会被自动转为0   因为转换 报错不容易发现
+
+null表示空对象指针转为数值是0 ;undefined 表示无的原始值转数值时是nan
